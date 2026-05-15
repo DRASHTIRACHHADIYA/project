@@ -34,7 +34,7 @@ const generatePdf = (f,l,e) => {
   pdf.text(l, 10, 50);
   pdf.text(e, 10, 60);
   
-  pdf.save('form-data.pdf');
+  pdf.save('form.pdf');
 };
 
  const Foarms = () => (
