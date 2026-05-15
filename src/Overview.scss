@@ -1,0 +1,45 @@
+.overview-page{
+    padding: 30px;
+}
+
+.overview-container{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.left img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+
+.right{
+    width: 500px;
+}
+
+.right h1{
+    margin-bottom: 20px;
+    // margin-top: 20px;
+}
+
+.right h2{
+    margin-bottom: 20px;
+    color: teal;
+}
+
+.right p{
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+
+.sizes button{
+    padding: 10px 20px;
+    border: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}

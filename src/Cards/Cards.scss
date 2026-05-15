@@ -1,0 +1,79 @@
+// h2 {
+//     background-color: rgb(200, 226, 82);
+//     margin-bottom: 20px;
+//     // @include btn(green,20px)
+
+//     @include ms{
+// background-color: black;
+// color: aliceblue;
+// width: 200px;
+//     }
+
+// }
+
+
+@use '../common.scss' as *;
+
+.box_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box {
+    height: 250px;
+    width: 400px;
+    background-color: white;
+    border: 1px solid #00aeff33;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+
+    &:hover {
+        box-shadow: 0 8px 20px #00aeff33;
+        transform: scale(1.04);
+        transition: transform 1s;
+        background: linear-gradient(to top, white, rgb(239, 242, 243));
+
+        .img {
+            background-color: white;
+            border: 1px solid rgba(7, 125, 243, .717);
+        }
+
+        .inner_img {
+            color: rgba(7, 125, 243, .717);
+        }
+    }
+
+}
+
+.content {
+    @include flex-center;
+    padding: 20px;
+    flex-direction: column;
+
+    p {
+        margin-top: 20px;
+        color: gray;
+        font-size: larger;
+    }
+}
+
+.img {
+    @include flex-center;
+    background-color: rgba(7, 125, 243, .717);
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+
+
+
+    .inner_img {
+        height: 50px;
+        width: 50px;
+        color: white;
+
+    }
+}

@@ -1,0 +1,73 @@
+@use '../common.scss' as *;
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(130, 165, 243), rgb(208, 225, 245), rgb(87, 160, 243), rgb(179, 209, 243));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+    @include ms {
+        background: linear-gradient(to top, rgb(175, 238, 175), rgb(146, 250, 146), rgb(134, 255, 134));
+        // color: black;
+        width: 100%;
+
+    }
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    padding-left: 40px;
+
+    @include ms {
+        height: 30px;
+        padding-left: 20px;
+    }
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between; 
+    gap: 40px;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+        transition: 0.3s;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    @include ms {
+        display: none;
+    }
+
+
+}
+
+.outline-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: white;
+        color: black;
+        box-shadow: 0 0 10px white, 0 0 20px white;
+    }
+}
